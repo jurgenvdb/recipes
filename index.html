@@ -4,214 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>recipes</title>
+    <style>
+        .toc {
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: 2px solid #ccc;
+        font-size: 15px;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover {
+        background-color: #ccc;
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        }
+    </style>
 </head>
 <body>
     <div>
         <h1>Recipes</h1>
-        <h3>Main courses</h3>
-        <lu>
-            <li><a href="#pulled stew">Pulled stew</a></li>
-            <li><a href="#boeuf bourguignon">Boeuf Bourguignon</a></li>
-        </lu>
-        <h3>Side dishes</h3>
-        <lu>
-            <li><a href="#mash">Mash</a></li>
-            <li><a href="#pickled_red_cabbage">Pickled red cabbage</a></li>
-        </lu>
-        <h3>Deserts or sweets</h3>
-        <lu>
-            <li><a href="#tiramisu">Tiramisu</a></li>
-            <li><a href="#lady fingers">Lady fingers</a></li>
-        </lu>
+        <div class="toc">
+            <h3>Main courses</h3>
+            <lu>
+                <li><a href="#pulled stew">Pulled stew</a></li>
+                <li><a href="#boeuf bourguignon">Boeuf Bourguignon</a></li>
+            </lu>
+            <h3>Side dishes</h3>
+            <lu>
+                <li><a href="#mash">Mash</a></li>
+                <li><a href="#pickled_red_cabbage">Pickled red cabbage</a></li>
+            </lu>
+            <h3>Deserts or sweets</h3>
+            <lu>
+                <li><a href="#tiramisu">Tiramisu</a></li>
+                <li><a href="#lady fingers">Lady fingers</a></li>
+            </lu>
+        </div>
     </div>
     <div id="tiramisu">
-        <h1>Tiramisu</h1>
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <input type="checkbox">
-            <label><a href="#lady fingers">300g lady fingers</a></label><br>
-            <input type="checkbox">
-            <label>500g mascarpone</label><br>
-            <input type="checkbox">
-            <label>4 eggs</label><br>
-            <input type="checkbox">
-            <label>100g granulated sugar</label><br>
-            <input type="checkbox">
-            <label>80 ml espresso</label><br>
-            <input type="checkbox">
-            <label>20 ml marsala wine</label><br>
-            <input type="checkbox">
-            <label>Unsweetened cocoa powder to dust</label><br>
-        </div>
-        <div class="recipe">
-            <h2>Recipe</h2>
-            <ul>
-                <li>Mix the cooled down espresso with the marsala wine</li>
-                <li>Seperate the eggs</li>
-                <li>Beat the eggwhites to a stiff consistency</li>
-                <li>Beat the yolks with the sugar to a light and smooth consistency</li>
-                <li>Add the mascarpone to the yolks and mix well untill smooth</li>
-                <li>Fold the eggwhites into the mascparpone mix</li>
-                <li>Put a layer of lady fingers at the bottom of the oven dish and cover with half of the espresso mix</li>
-                <li>Cover the lady fingers with half of the mascarpone mix</li>
-                <li>Add another layer of the lady fingers and let the rest of the espresso mix soak in</li>
-                <li>Top with the remainder of the mascarpone mix</li>
-                <li>It is optional to cover with cacao powder before or after resting</li>
-                <li>Let rest for a minimal of 3 hours in the fridge</li>
-            </ul>
+        <button class="collapsible"><h1>Tiramisu</h1></button>
+        <div class="content">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <input type="checkbox">
+                <label><a href="#lady fingers">300g lady fingers</a></label><br>
+                <input type="checkbox">
+                <label>500g mascarpone</label><br>
+                <input type="checkbox">
+                <label>4 eggs</label><br>
+                <input type="checkbox">
+                <label>100g granulated sugar</label><br>
+                <input type="checkbox">
+                <label>80 ml espresso</label><br>
+                <input type="checkbox">
+                <label>20 ml marsala wine</label><br>
+                <input type="checkbox">
+                <label>Unsweetened cocoa powder to dust</label><br>
             </div>
+            <div class="recipe">
+                <h2>Recipe</h2>
+                <ul>
+                    <li>Mix the cooled down espresso with the marsala wine</li>
+                    <li>Seperate the eggs</li>
+                    <li>Beat the eggwhites to a stiff consistency</li>
+                    <li>Beat the yolks with the sugar to a light and smooth consistency</li>
+                    <li>Add the mascarpone to the yolks and mix well untill smooth</li>
+                    <li>Fold the eggwhites into the mascparpone mix</li>
+                    <li>Put a layer of lady fingers at the bottom of the oven dish and cover with half of the espresso mix</li>
+                    <li>Cover the lady fingers with half of the mascarpone mix</li>
+                    <li>Add another layer of the lady fingers and let the rest of the espresso mix soak in</li>
+                    <li>Top with the remainder of the mascarpone mix</li>
+                    <li>It is optional to cover with cacao powder before or after resting</li>
+                    <li>Let rest for a minimal of 3 hours in the fridge</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div id="lady fingers">
-        <h1>Lady Fingers</h1>
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <input type="checkbox">
-            <label>3 eggs</label><br>
-            <input type="checkbox">
-            <label>1,5 tablespoons powdered sugar</label><br>
-            <input type="checkbox">
-            <label>90g + 1.5 tablespoons granulated sugar</label><br>
-            <input type="checkbox">
-            <label>60g "00" flour (as fine as possible flour)</label><br>
-            <input type="checkbox">
-            <label>30g potatostarch</label><br>
-            <input type="checkbox">
-            <label>(optional) lemon zest or other flavoring such as vanilla extract</label><br>
+        <button class="collapsible"><h1>Lady Fingers</h1></button>
+        <div class="content">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <input type="checkbox">
+                <label>3 eggs</label><br>
+                <input type="checkbox">
+                <label>1,5 tablespoons powdered sugar</label><br>
+                <input type="checkbox">
+                <label>90g + 1.5 tablespoons granulated sugar</label><br>
+                <input type="checkbox">
+                <label>60g "00" flour (as fine as possible flour)</label><br>
+                <input type="checkbox">
+                <label>30g potatostarch</label><br>
+                <input type="checkbox">
+                <label>(optional) lemon zest or other flavoring such as vanilla extract</label><br>
+            </div>
+            <div class="recipe">
+                <h2>Recipe</h2>
+                <ul>
+                    <li>Split the eggs</li>
+                    <li>Beat the eggwhites together with the sugar to a stiff merengue</li>
+                    <li>Break the yolks and fold them into the merengue</li>
+                    <li>Sift the flour and potato starch into the merengue and fold it together, add any flavourings</li>
+                    <li>Put the mix in a piping bag and make strips, or lay a slab of it down on a baking sheet covered with baking paper</li>
+                    <li>Dust with the powdered sugar, then sprinkle with the remainder of the granulated sugar</li>
+                    <li>Bake in a 200 degrees oven for +- 7 minutes</li>
+                    <li>Open and shut down the oven and let cool inside with the door open</li>
+                    <li>Want them more crispy? Let them airdry for 1/2 days</li>
+                </ul>
+            </div>
         </div>
-        <div class="recipe">
-            <h2>Recipe</h2>
-            <ul>
-                <li>Split the eggs</li>
-                <li>Beat the eggwhites together with the sugar to a stiff merengue</li>
-                <li>Break the yolks and fold them into the merengue</li>
-                <li>Sift the flour and potato starch into the merengue and fold it together, add any flavourings</li>
-                <li>Put the mix in a piping bag and make strips, or lay a slab of it down on a baking sheet covered with baking paper</li>
-                <li>Dust with the powdered sugar, then sprinkle with the remainder of the granulated sugar</li>
-                <li>Bake in a 200 degrees oven for +- 7 minutes</li>
-                <li>Open and shut down the oven and let cool inside with the door open</li>
-                <li>Want them more crispy? Let them airdry for 1/2 days</li>
-            </ul>
     </div>
     <div id="pulled stew">
-        <h1>Pulled stew</h1>
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <input type="checkbox">
-            <label>1-1.5 kg beef rib</label><br>
-            <input type="checkbox">
-            <label>4 onions</label><br>
-            <input type="checkbox">
-            <label>2 bay leaves</label><br>
-            <input type="checkbox">
-            <label>6 cloves</label><br>
-            <input type="checkbox">
-            <label>Little splash of red wine vinegar</label><br>
-            <input type="checkbox">
-            <label>Salt</label><br>
-            <input type="checkbox">
-            <label>Pepper</label><br>
-            <input type="checkbox">
-            <label>3 tbsp flour</label><br>
-            <input type="checkbox">
-            <label>Butter</label><br>
-            <input type="checkbox">
-            <label>2 pieces ontbijtkoek</label><br>
-            <input type="checkbox">
-            <label>500-600 ml beef stock (bouillon cubes are fine)</label><br>
-        </div>
-        <div class="recipe">
-            <h2>Recipe</h2>
-            <ul>
-                <li>Season both sides of the beef with salt, pepper and flour. Sear in a pan with butter and set aside.</li>
-                <li>Slice the onion in thin half rings and add to the same pan. Fry down for 5-10 minutes.</li>
-                <li>Add tomato paste, red wine vinegar, bay leaves, cloves, beef stock and salt and pepper to taste.</li>
-                <li>Bring to a light simmer and add the beef back in, cover and let simmer for at least 3-4 hours or until it falls apart (the longer the better).</li>
-                <li>When the beef is almost done, stir the ontbijtkoek through it. This will make the sauce thick.</li>
-                <li>Serve with the <a href="#mash">mash</a>, <a href="#pickled_red_cabbage">pickled cabbage</a>(or something else fresh), any vegetables you like and top with some fresh parsley.</li>
-            </ul>
+        <button class="collapsible"><h1>Pulled stew</h1></button>
+        <div class="content">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <input type="checkbox">
+                <label>1-1.5 kg beef rib</label><br>
+                <input type="checkbox">
+                <label>4 onions</label><br>
+                <input type="checkbox">
+                <label>2 bay leaves</label><br>
+                <input type="checkbox">
+                <label>6 cloves</label><br>
+                <input type="checkbox">
+                <label>Little splash of red wine vinegar</label><br>
+                <input type="checkbox">
+                <label>Salt</label><br>
+                <input type="checkbox">
+                <label>Pepper</label><br>
+                <input type="checkbox">
+                <label>3 tbsp flour</label><br>
+                <input type="checkbox">
+                <label>Butter</label><br>
+                <input type="checkbox">
+                <label>2 pieces ontbijtkoek</label><br>
+                <input type="checkbox">
+                <label>500-600 ml beef stock (bouillon cubes are fine)</label><br>
+            </div>
+            <div class="recipe">
+                <h2>Recipe</h2>
+                <ul>
+                    <li>Season both sides of the beef with salt, pepper and flour. Sear in a pan with butter and set aside.</li>
+                    <li>Slice the onion in thin half rings and add to the same pan. Fry down for 5-10 minutes.</li>
+                    <li>Add tomato paste, red wine vinegar, bay leaves, cloves, beef stock and salt and pepper to taste.</li>
+                    <li>Bring to a light simmer and add the beef back in, cover and let simmer for at least 3-4 hours or until it falls apart (the longer the better).</li>
+                    <li>When the beef is almost done, stir the ontbijtkoek through it. This will make the sauce thick.</li>
+                    <li>Serve with the <a href="#mash">mash</a>, <a href="#pickled_red_cabbage">pickled cabbage</a>(or something else fresh), any vegetables you like and top with some fresh parsley.</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="mash">
-        <h1>Mash</h1>
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <input type="checkbox">
-            <label>1.5 kg potatoes</label><br>
-            <input type="checkbox">
-            <label>100 ml milk (more or less)</label><br>
-            <input type="checkbox">
-            <label>Knob of butter (optional)</label><br>
-            <input type="checkbox">
-            <label>Optional: mustard</label><br>
-        </div>
-        <div class="recipe">
-            <h2>Recipe</h2>
-            <ul>
-                <li>Boil the potatoes in salted cold water until fork tender.</li>
-                <li>Strain and push (when still hot) through a fine sieve into the same pan.</li>
-                <li>Add salt, pepper, the optional mustard, milk, butter and any other spices (such as nutmeg) you like to taste.</li>
-            </ul>
+        <button class="collapsible"><h1>Mash</h1></button>
+        <div class="content">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <input type="checkbox">
+                <label>1.5 kg potatoes</label><br>
+                <input type="checkbox">
+                <label>100 ml milk (more or less)</label><br>
+                <input type="checkbox">
+                <label>Knob of butter (optional)</label><br>
+                <input type="checkbox">
+                <label>Optional: mustard</label><br>
+            </div>
+            <div class="recipe">
+                <h2>Recipe</h2>
+                <ul>
+                    <li>Boil the potatoes in salted cold water until fork tender.</li>
+                    <li>Strain and push (when still hot) through a fine sieve into the same pan.</li>
+                    <li>Add salt, pepper, the optional mustard, milk, butter and any other spices (such as nutmeg) you like to taste.</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="pickled_red_cabbage">
-        <h1>Pickled red cabbage</h1>
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <input type="checkbox">
-            <label>Red cabbage</label><br>
-            <input type="checkbox">
-            <label>200 ml vinegar 200 ml water</label><br>
-            <input type="checkbox">
-            <label>3 tbsp sugar</label><br>
-            <input type="checkbox">
-            <label>1 tsp salt</label><br>
-        </div>
-        <div class="recipe">
-            <h2>Recipe</h2>
-            <ul>
-                <li>Bring equal parts water and vinegar, to a boil with some sugar and salt.</li>
-                <li>Finely slice the red cabbage in strips and add to a mason jar. Pour over the liquid, add a bay leaf, chili flakes or any other spices. Close and let marinated for as long as possible</li>
-            </ul>
+        <button class="collapsible"><h1>Pickled red cabbage</h1></button>
+        <div class="content">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <input type="checkbox">
+                <label>Red cabbage</label><br>
+                <input type="checkbox">
+                <label>200 ml vinegar 200 ml water</label><br>
+                <input type="checkbox">
+                <label>3 tbsp sugar</label><br>
+                <input type="checkbox">
+                <label>1 tsp salt</label><br>
+            </div>
+            <div class="recipe">
+                <h2>Recipe</h2>
+                <ul>
+                    <li>Bring equal parts water and vinegar, to a boil with some sugar and salt.</li>
+                    <li>Finely slice the red cabbage in strips and add to a mason jar. Pour over the liquid, add a bay leaf, chili flakes or any other spices. Close and let marinated for as long as possible</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="boeuf bourguignon">
-        <h1>Boeuf Bourguignon</h1>
-        <div class="ingredients">
-            <h2>Ingredients</h2>
-            <input type="checkbox">
-            <label>4 onions</label><br>
-            <input type="checkbox">
-            <label>2 carrots</label><br>
-            <input type="checkbox">
-            <label>5 sticks of celery</label><br>
-            <input type="checkbox">
-            <label>1 kg beef</label><br>
-            <input type="checkbox">
-            <label>300 g bacon bits</label><br>
-            <input type="checkbox">
-            <label>500 ml red wine (preferably as rich as possible)</label><br>
-            <input type="checkbox">
-            <label>500 ml beef stock</label><br>
-            <input type="checkbox">
-            <label>12 g thime</label><br>
-            <input type="checkbox">
-            <label>5 bay leaves</label><br>
-            <input type="checkbox">
-            <label>butter, oil, salt, pepper</label><br>
+        <button class="collapsible"><h1>Boeuf Bourguignon</h1></button>
+        <div class="content">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <input type="checkbox">
+                <label>4 onions</label><br>
+                <input type="checkbox">
+                <label>2 carrots</label><br>
+                <input type="checkbox">
+                <label>5 sticks of celery</label><br>
+                <input type="checkbox">
+                <label>1 kg beef</label><br>
+                <input type="checkbox">
+                <label>300 g bacon bits</label><br>
+                <input type="checkbox">
+                <label>500 ml red wine (preferably as rich as possible)</label><br>
+                <input type="checkbox">
+                <label>500 ml beef stock</label><br>
+                <input type="checkbox">
+                <label>12 g thime</label><br>
+                <input type="checkbox">
+                <label>5 bay leaves</label><br>
+                <input type="checkbox">
+                <label>butter, oil, salt, pepper</label><br>
+            </div>
+            <div class="recipe">
+                <h2>Recipe</h2>
+                <ul>
+                    <li>Cut all the vegetables into bite-sized pieces, not too small.</li>
+                    <li>Cut the beef into bite-sized pieces and season with salt and pepper.</li>
+                    <li>Heat a pan with butter and oil and sear the beef in batches until browned on all sides.</li>
+                    <li>Set aside and add the bacon to the pan, fry until crispy.</li>
+                    <li>Add the vegetables to the pan and fry until softened.</li>
+                    <li>Deglaze the pan with the wine and stock</li>
+                    <li>Add the beef back in and add the thyme and bay leaves.</li>
+                    <li>Let simmer for at least 3 hours or until the beef is tender.</li>
+                    <li>Season to taste and serve with some fresh parsley and a side, for example a <a href="#mash">mash</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="recipe">
-            <h2>Recipe</h2>
-            <ul>
-                <li>Cut all the vegetables into bite-sized pieces, not too small.</li>
-                <li>Cut the beef into bite-sized pieces and season with salt and pepper.</li>
-                <li>Heat a pan with butter and oil and sear the beef in batches until browned on all sides.</li>
-                <li>Set aside and add the bacon to the pan, fry until crispy.</li>
-                <li>Add the vegetables to the pan and fry until softened.</li>
-                <li>Deglaze the pan with the wine and stock</li>
-                <li>Add the beef back in and add the thyme and bay leaves.</li>
-                <li>Let simmer for at least 3 hours or until the beef is tender.</li>
-                <li>Season to taste and serve with some fresh parsley and a side, for example a <a href="#mash">mash</a></li>
-            </ul>
     </div>
 </body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+    }
+</script>
 </html>
