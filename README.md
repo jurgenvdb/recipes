@@ -1,6 +1,7 @@
 # Recipes
 
-A collection of recipes
+A collection of recipes.
+[Click here](https://jurgenvdb.github.io/recipes/) for the page of this repository.
 
 ## Tiramisu
 
